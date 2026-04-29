@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class BalanceButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public BikeBalance target;
+    public BikeBalance2 target;
     public bool isLeft = true;
 
     private bool held = false;

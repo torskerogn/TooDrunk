@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BikeBalance : MonoBehaviour
+public class BikeBalance2 : MonoBehaviour
 {
     [Header("Balance Settings")]
     public float drunkForce = 30f;
@@ -27,7 +27,6 @@ public class BikeBalance : MonoBehaviour
     {
         if (isFallen)
         {
-            // Slowly reset back to upright
             currentAngle = Mathf.MoveTowards(currentAngle, 90f, resetSpeed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(0, 0, currentAngle - 90f);
 
@@ -40,25 +39,17 @@ public class BikeBalance : MonoBehaviour
             return;
         }
 
-        // Change drunk force direction randomly over time
         forceTimer -= Time.deltaTime;
         if (forceTimer <= 0f)
             PickNewDrunkForce();
 
-        // Apply drunk force
         angularVelocity += currentDrunkForce * Time.deltaTime;
-
-        // Dampen slightly so it doesn't spin forever
         angularVelocity *= 0.98f;
-
-        // Update angle
         currentAngle += angularVelocity * Time.deltaTime;
 
-        // Check fall
         if (currentAngle < 90f - fallThreshold || currentAngle > 90f + fallThreshold)
             isFallen = true;
 
-        // Apply rotation (90 = upright)
         transform.rotation = Quaternion.Euler(0, 0, currentAngle - 90f);
     }
 
@@ -76,7 +67,6 @@ public class BikeBalance : MonoBehaviour
 
     void PickNewDrunkForce()
     {
-        // Random direction and strength
         float direction = Random.value > 0.5f ? 1f : -1f;
         currentDrunkForce = direction * drunkForce;
         forceTimer = forceChangeInterval + Random.Range(-0.5f, 0.5f);

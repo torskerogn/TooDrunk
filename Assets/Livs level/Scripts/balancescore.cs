@@ -3,7 +3,7 @@ using TMPro;
 
 public class BalanceScore : MonoBehaviour
 {
-    public BikeBalance bike;
+    public BikeBalance2 bike;
     public TextMeshProUGUI scoreText;
 
     private float score = 0f;
