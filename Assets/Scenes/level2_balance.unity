@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 789882607}
-  - component: {fileID: 789882606}
+  - component: {fileID: 789882608}
   m_Layer: 0
   m_Name: "bikepivot bl\xE5"
   m_TagString: Untagged
@@ -273,24 +273,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &789882606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789882605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f5b085bea9d4840a4207db292945d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BikeBalance
-  gravity: 120
-  playerForce: 80
-  damping: 0.98
-  fallAngle: 45
-  randomDrift: 10
-  resetSpeed: 40
 --- !u!4 &789882607
 Transform:
   m_ObjectHideFlags: 0
@@ -307,6 +289,20 @@ Transform:
   - {fileID: 1262974273141098524}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789882608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789882605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f5b085bea9d4840a4207db292945d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BikeBalance
+  gravity: 15
+  counterForce: 50
 --- !u!1001 &1085431737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -393,7 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1475774291}
-  - component: {fileID: 1475774290}
+  - component: {fileID: 1475774292}
   m_Layer: 0
   m_Name: bikepivot orange
   m_TagString: Untagged
@@ -401,24 +397,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1475774290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475774289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f5b085bea9d4840a4207db292945d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BikeBalance
-  gravity: 120
-  playerForce: 80
-  damping: 0.98
-  fallAngle: 45
-  randomDrift: 10
-  resetSpeed: 40
 --- !u!4 &1475774291
 Transform:
   m_ObjectHideFlags: 0
@@ -435,6 +413,20 @@ Transform:
   - {fileID: 2632935015862285464}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475774292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475774289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f5b085bea9d4840a4207db292945d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BikeBalance
+  gravity: 15
+  counterForce: 50
 --- !u!1 &1614485861
 GameObject:
   m_ObjectHideFlags: 0
