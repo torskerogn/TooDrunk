@@ -1,16 +1,22 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class balancebutton : MonoBehaviour
+public class BalanceButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public BikeBalance target;
+    public bool isLeft = true;
 
-    // Update is called once per frame
+    private bool held = false;
+
     void Update()
     {
-        
+        if (held)
+        {
+            if (isLeft) target.PushLeft();
+            else target.PushRight();
+        }
     }
+
+    public void OnPointerDown(PointerEventData eventData) { held = true; }
+    public void OnPointerUp(PointerEventData eventData) { held = false; }
 }

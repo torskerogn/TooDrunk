@@ -16,11 +16,8 @@ TagManager:
   - Items
   - Player1
   - Player2
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Spiller 1
+  - Spiller 2
   - 
   - 
   - 
@@ -43,6 +40,7 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3392703723
+    locked: 0
   - name: Background-blue
     uniqueID: 4208756927
     locked: 0

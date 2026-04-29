@@ -1,16 +1,23 @@
 using UnityEngine;
+using TMPro;
 
-public class balancescore : MonoBehaviour
+public class BalanceScore : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public BikeBalance bike;
+    public TextMeshProUGUI scoreText;
 
-    // Update is called once per frame
+    private float score = 0f;
+
     void Update()
     {
-        
+        if (!bike.isFallen)
+        {
+            float angle = bike.currentAngle;
+            if (angle >= 75f && angle <= 105f)
+            {
+                score += Time.deltaTime * 10f;
+                scoreText.text = Mathf.FloorToInt(score).ToString();
+            }
+        }
     }
 }
