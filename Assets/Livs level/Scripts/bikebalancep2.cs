@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BikeBalance : MonoBehaviour
+public class BikeBalanceP2 : MonoBehaviour
 {
     public float gravity = 100f;
     public float counterForce = 300f;
@@ -51,9 +51,11 @@ public class BikeBalance : MonoBehaviour
             return;
         }
 
-        velocity += Mathf.Sign(angle - 90f) * gravity * Time.deltaTime;
+        float fallAmount = Mathf.Abs(angle - 90f) / 90f;
+        velocity += Mathf.Sign(angle - 90f) * gravity * (1f + fallAmount * 3f) * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        // A and D keys for player 2
+        if (Input.GetKey(KeyCode.A))
         {
             leftHoldTime += Time.deltaTime;
             float force = Mathf.Min(counterForce * (1f + leftHoldTime * 3f), maxCounterForce);
@@ -64,7 +66,7 @@ public class BikeBalance : MonoBehaviour
             leftHoldTime = 0f;
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             rightHoldTime += Time.deltaTime;
             float force = Mathf.Min(counterForce * (1f + rightHoldTime * 3f), maxCounterForce);
@@ -88,6 +90,6 @@ public class BikeBalance : MonoBehaviour
             velocity = 0f;
         }
 
-        Debug.Log("angle: " + angle.ToString("F1") + " | L: " + leftHoldTime.ToString("F2") + " | R: " + rightHoldTime.ToString("F2"));
+        Debug.Log("P2 angle: " + angle.ToString("F1") + " | fallAmount: " + fallAmount.ToString("F2"));
     }
 }
