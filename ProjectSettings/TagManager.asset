@@ -14,6 +14,9 @@ TagManager:
   - BlueField
   - RedField
   - Items
+  - Player1
+  - Player2
+  - 
   - 
   - 
   - 
@@ -40,6 +43,11 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3392703723
+  - name: Background-blue
+    uniqueID: 4208756927
+    locked: 0
+  - name: Background-orange
+    uniqueID: 736758453
     locked: 0
   - name: Default
     uniqueID: 0
