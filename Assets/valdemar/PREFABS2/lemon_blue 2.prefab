@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8307668203866531844}
   - component: {fileID: 2801915802316560966}
   m_Layer: 8
-  m_Name: lemon_blue
+  m_Name: lemon_blue 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2635192316437102380, guid: c8a698fb0d01741468d7baccdb6879d2, type: 3}
+  m_Sprite: {fileID: -415612152813669464, guid: 7fa49f8ec62ba48688472729dede39d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
