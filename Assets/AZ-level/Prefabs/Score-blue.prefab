@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4943603465667593655}
   - component: {fileID: 6763537198986979431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Score-blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.52, y: -0.253, z: 0}
-  m_LocalScale: {x: 0.5847, y: 0.3521538, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.307279, y: 0.7873496, z: 2.2358117}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Helmet-blue
+  - Helmet
   layers:
   - Default
   - TransparentFX
@@ -18,6 +20,8 @@ TagManager:
   - Player2
   - Spiller 1
   - Spiller 2
+  - DrunkPerson-blue
+  - Helmet-blue
   - 
   - 
   - 
@@ -49,6 +53,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Helmet
+    uniqueID: 3828514807
     locked: 0
   m_RenderingLayers:
   - Default

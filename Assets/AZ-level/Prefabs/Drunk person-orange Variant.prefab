@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4239539474825219843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.07273826
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.018136583
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036285166530080076, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265233410540145016, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Name
+      value: Drunk person-orange Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265233410540145016, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702475103099354243, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 22.090002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702475103099354243, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 28.400238
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702475103099354243, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 45.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702475103099354243, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 56.28334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949661023661888078, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Size.x
+      value: 22.090002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949661023661888078, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Size.y
+      value: 28.400238
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949661023661888078, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8305885525694070711, guid: cae4f3729f2cb420da05d751b653121c, type: 3}
+    - target: {fileID: 5949661023661888078, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949661023661888078, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949661023661888078, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e0fd55457e444f4190af6a6622cd658, type: 3}

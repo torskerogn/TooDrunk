@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3769614447874261789}
   - component: {fileID: 522685077557857723}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Background-orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02, y: 2.43, z: 0}
-  m_LocalScale: {x: 5.8006, y: 5.0369277, z: 1}
+  m_LocalScale: {x: 11.401245, y: 10.122432, z: 1.012243}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.5254902, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.8666667, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

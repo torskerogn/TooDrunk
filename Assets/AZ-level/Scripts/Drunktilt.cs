@@ -11,7 +11,7 @@ public class DrunkTilt : MonoBehaviour
     {
         // Anchor point at the bottom of the sprite
         // Assumes the sprite is centered, so bottom is -half the height
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
         float halfHeight = sr.bounds.extents.y;
         pivotOffset = new Vector3(0, -halfHeight, 0);
     }
