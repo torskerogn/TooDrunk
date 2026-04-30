@@ -9,6 +9,8 @@ public class BikeBalance : MonoBehaviour
     public float fallWaitTime = 1f;
     public float startWaitTime = 1f;
 
+    public float score = 0f;
+
     private float angle = 90f;
     private float velocity = 0f;
     private bool isFallen = false;
@@ -16,34 +18,34 @@ public class BikeBalance : MonoBehaviour
     private float startTimer = 0f;
     private float leftHoldTime = 0f;
     private float rightHoldTime = 0f;
+    private bool holdingLeft = false;
+    private bool holdingRight = false;
+
+    public void OnLeftDown()  { holdingLeft = true; }
+    public void OnLeftUp()    { holdingLeft = false; }
+    public void OnRightDown() { holdingRight = true; }
+    public void OnRightUp()   { holdingRight = false; }
 
     void Start()
     {
         startTimer = startWaitTime;
+        angle = 90f + 10f;
     }
 
     void Update()
     {
-        if (startTimer > 0f)
-        {
-            startTimer -= Time.deltaTime;
-            return;
-        }
+        if (startTimer > 0f) { startTimer -= Time.deltaTime; return; }
 
         if (isFallen)
         {
-            if (fallTimer > 0f)
-            {
-                fallTimer -= Time.deltaTime;
-                return;
-            }
+            if (fallTimer > 0f) { fallTimer -= Time.deltaTime; return; }
 
             angle = Mathf.MoveTowards(angle, 90f, resetSpeed * Time.deltaTime);
             transform.localRotation = Quaternion.Euler(0f, 0f, angle - 90f);
 
             if (Mathf.Abs(angle - 90f) < 1f)
             {
-                angle = 90f + Random.Range(-10f, 10f);
+                angle = 90f + 10f;
                 velocity = 0f;
                 isFallen = false;
                 startTimer = startWaitTime;
@@ -51,33 +53,31 @@ public class BikeBalance : MonoBehaviour
             return;
         }
 
-        velocity += Mathf.Sign(angle - 90f) * gravity * Time.deltaTime;
+        float fallAmount = Mathf.Abs(angle - 90f) / 90f;
+        velocity += Mathf.Sign(angle - 90f) * gravity * (1f + fallAmount * 3f) * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (holdingLeft)
         {
             leftHoldTime += Time.deltaTime;
             float force = Mathf.Min(counterForce * (1f + leftHoldTime * 3f), maxCounterForce);
             velocity += force * Time.deltaTime;
         }
-        else
-        {
-            leftHoldTime = 0f;
-        }
+        else leftHoldTime = 0f;
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (holdingRight)
         {
             rightHoldTime += Time.deltaTime;
             float force = Mathf.Min(counterForce * (1f + rightHoldTime * 3f), maxCounterForce);
             velocity -= force * Time.deltaTime;
         }
-        else
-        {
-            rightHoldTime = 0f;
-        }
+        else rightHoldTime = 0f;
 
         velocity *= 0.97f;
         angle += velocity * Time.deltaTime;
         transform.localRotation = Quaternion.Euler(0f, 0f, angle - 90f);
+
+        if (angle >= 75f && angle <= 105f)
+            score += Time.deltaTime;
 
         if (angle < 0f || angle > 180f)
         {
@@ -87,7 +87,5 @@ public class BikeBalance : MonoBehaviour
             rightHoldTime = 0f;
             velocity = 0f;
         }
-
-        Debug.Log("angle: " + angle.ToString("F1") + " | L: " + leftHoldTime.ToString("F2") + " | R: " + rightHoldTime.ToString("F2"));
     }
 }

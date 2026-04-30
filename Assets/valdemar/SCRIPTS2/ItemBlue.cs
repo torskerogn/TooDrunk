@@ -21,6 +21,10 @@ public class ItemBlue : MonoBehaviour
     void Update()
     {
         if (transform.position.y > 13f)
-            Destroy(gameObject);
+        {
+            if (pointValue > 0)
+                GameManager2.Instance.AddScore("blue", -1);
+                Destroy(gameObject);
+        }
     }
 }

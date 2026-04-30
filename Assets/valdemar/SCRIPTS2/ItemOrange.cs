@@ -19,8 +19,12 @@ public class ItemOrange : MonoBehaviour
     }
 
     void Update()
+{
+    if (transform.position.y < -13f)
     {
-        if (transform.position.y < -13f)
-            Destroy(gameObject);
+        if (pointValue > 0)
+            GameManager2.Instance.AddScore("orange", -1);
+        Destroy(gameObject);
     }
+}
 }
