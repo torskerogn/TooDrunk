@@ -6,10 +6,37 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start screen.unity
+    guid: 64ba64fd788884f3aaa372e7f14f7ea5
+  - enabled: 1
+    path: Assets/Scenes/Wheel video 1.unity
+    guid: 60745581e767f471db33809ab4350278
+  - enabled: 1
     path: Assets/Scenes/level1_coordination.unity
     guid: 49d671837954c45478bafbd9ab9fdc86
+  - enabled: 1
+    path: Assets/Scenes/Winner-looser  1.unity
+    guid: d0044b2b9bf934550a8839333751d7c9
+  - enabled: 1
+    path: Assets/Scenes/Wheel video 2.unity
+    guid: 5e7861c92c7ae4a6396110d9d6102fb0
+  - enabled: 1
+    path: Assets/Scenes/level2_balance.unity
+    guid: 49fa2e62c972746de9d7e459d2f9ee65
+  - enabled: 1
+    path: Assets/Scenes/Winner-looser 2.unity
+    guid: b2072ada7b7d941939654c4cc733b1f0
+  - enabled: 1
+    path: Assets/Scenes/Wheel video 3.unity
+    guid: 965269c94525f4615b7fc291d174c42a
+  - enabled: 1
+    path: Assets/Scenes/level3_reaction.v2.unity
+    guid: 54bdea02072144249ab6f29ae381f634
+  - enabled: 1
+    path: Assets/Scenes/Winner-looser 3.unity
+    guid: f0cd3f6d08e2d4890999788cdd679992
   - enabled: 0
-    path: Assets/Scenes/level3_reaction.unity
+    path: Assets/Scenes/test.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
