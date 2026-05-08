@@ -292,14 +292,17 @@ MonoBehaviour:
   loserPair1Prefab: {fileID: 713265040845185199, guid: ba8072e55367d47379de85721b7e9555, type: 3}
   winnerPair1Prefab: {fileID: 6069621619679028536, guid: b1081977732bb482cbb2431d99785e20, type: 3}
   loserPair1Pos: {x: -1.67, y: 3.61, z: 0}
+  loserPair1Rot: {x: 180, y: 180, z: 0}
   winnerPair1Pos: {x: -1.71, y: -3.61, z: 0}
   loserPair2Prefab: {fileID: 6397644991160994644, guid: f7c9d49a8774b4fcfa388d5e1e208450, type: 3}
   winnerPair2Prefab: {fileID: 8036389278966260876, guid: 64a639d58c246416db7a0f5e0ac17c26, type: 3}
   loserPair2Pos: {x: 0, y: 3.61, z: 0}
+  loserPair2Rot: {x: 180, y: 180, z: 0}
   winnerPair2Pos: {x: 0, y: -3.61, z: 0}
   loserPair3Prefab: {fileID: 8464738884083742437, guid: 9cbfee87e38684e58b26a3f4dd37fd11, type: 3}
   winnerPair3Prefab: {fileID: 3093420072231257887, guid: b5d4d50aa82b4476db2eeb7f7c6627ef, type: 3}
   loserPair3Pos: {x: 1.82, y: 3.61, z: 0}
+  loserPair3Rot: {x: 180, y: 180, z: 0}
   winnerPair3Pos: {x: 1.78, y: -3.61, z: 0}
 --- !u!1 &1807999273
 GameObject:
