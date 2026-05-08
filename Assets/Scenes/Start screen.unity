@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VideoStarter
   videoPlayer: {fileID: 1570337377}
-  delayBeforePlay: 0.5
+  delayBeforePlay: 0
 --- !u!1 &1707078702
 GameObject:
   m_ObjectHideFlags: 0

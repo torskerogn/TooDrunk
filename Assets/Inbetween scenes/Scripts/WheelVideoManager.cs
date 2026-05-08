@@ -6,7 +6,7 @@ public class WheelVideoManager : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public int targetGameScene = 2;
-    private double jumpTime = 12.0;
+    private double jumpTime = 11.5;
     private float pauseDuration = 2.5f;
     private bool hasPaused = false;
     private float pauseStartTime = 0f;

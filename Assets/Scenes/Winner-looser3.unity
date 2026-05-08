@@ -411,9 +411,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResultScreen
   videoPlayer: {fileID: 2136734516}
   nextScene: 1
+  pauseAfterPair3: 5
   loserPair1Prefab: {fileID: 713265040845185199, guid: ba8072e55367d47379de85721b7e9555, type: 3}
   winnerPair1Prefab: {fileID: 6069621619679028536, guid: b1081977732bb482cbb2431d99785e20, type: 3}
-  loserPair1Pos: {x: 1.67, y: 3.61, z: 0}
+  loserPair1Pos: {x: -1.67, y: 3.61, z: 0}
   loserPair1Rot: {x: 180, y: 180, z: 0}
   winnerPair1Pos: {x: -1.71, y: -3.61, z: 0}
   loserPair2Prefab: {fileID: 6397644991160994644, guid: f7c9d49a8774b4fcfa388d5e1e208450, type: 3}
