@@ -773,6 +773,7 @@ MonoBehaviour:
   blueScoreText: {fileID: 1826602104}
   orangeScoreText: {fileID: 126842077}
   timerText: {fileID: 0}
+  winnerLoserScene: 11
 --- !u!4 &1192554427
 Transform:
   m_ObjectHideFlags: 0
@@ -1108,7 +1109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e8e6e5f21004c5fa55b87392cf8216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTimer
-  winnerLoserScene: 9
+  winnerLoserScene: 11
 --- !u!4 &1839512674
 Transform:
   m_ObjectHideFlags: 0

@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WheelVideoManager
   videoPlayer: {fileID: 818221986}
-  targetGameScene: 5
+  targetGameScene: 6
 --- !u!1 &1942089219
 GameObject:
   m_ObjectHideFlags: 0

@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResultScreen
   videoPlayer: {fileID: 1961350521}
-  nextScene: 7
+  nextScene: 9
   pauseAfterPair3: 5
   loserPair1Prefab: {fileID: 713265040845185199, guid: ba8072e55367d47379de85721b7e9555, type: 3}
   winnerPair1Prefab: {fileID: 6069621619679028536, guid: b1081977732bb482cbb2431d99785e20, type: 3}

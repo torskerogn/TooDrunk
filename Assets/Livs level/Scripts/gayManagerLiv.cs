@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class gayManagerLiv : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class gayManagerLiv : MonoBehaviour
 
     public float gameDuration = 60f;
     public float timeRemaining;
+    public int winnerLoserScene = 7; // Sæt til den rigtige scene nummer!
     private bool gameOver = false;
 
     void Start()
@@ -30,7 +32,29 @@ public class gayManagerLiv : MonoBehaviour
         {
             timeRemaining = 0f;
             gameOver = true;
-            Debug.Log("GAME OVER — P1: " + Mathf.FloorToInt(playerOne.score) + " P2: " + Mathf.FloorToInt(playerTwo.score));
+            
+            float p1Score = Mathf.FloorToInt(playerOne.score);
+            float p2Score = Mathf.FloorToInt(playerTwo.score);
+            
+            Debug.Log("GAME OVER — P1: " + p1Score + " P2: " + p2Score);
+            
+            // Bestem vinder og transition
+            if (p2Score > p1Score)
+            {
+                GameData.instance.winner = 2; // Player 2 vinder
+                SceneManager.LoadScene(winnerLoserScene + 1); // Player 2 scene
+            }
+            else if (p1Score > p2Score)
+            {
+                GameData.instance.winner = 1; // Player 1 vinder
+                SceneManager.LoadScene(winnerLoserScene); // Player 1 scene
+            }
+            else
+            {
+                GameData.instance.winner = 1; // Tie
+                SceneManager.LoadScene(winnerLoserScene);
+            }
+            return;
         }
 
         p1ScoreText.text = Mathf.FloorToInt(playerOne.score).ToString();

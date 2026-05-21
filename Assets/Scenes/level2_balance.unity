@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e8e6e5f21004c5fa55b87392cf8216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTimer
-  winnerLoserScene: 6
+  winnerLoserScene: 7
 --- !u!4 &983036644
 Transform:
   m_ObjectHideFlags: 0
